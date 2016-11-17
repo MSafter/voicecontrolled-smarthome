@@ -1,0 +1,3 @@
+pyAudio
+pocketsphinx
+configobj
