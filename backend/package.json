@@ -1,0 +1,31 @@
+{
+  "name": "simple-smarthome-backend",
+  "version": "1.0.0",
+  "description": "Simple voice controlled smart home backend stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSafter/voicecontrolled-smarthome.git"
+  },
+  "keywords": [
+    "PI",
+    "smarthome",
+    "voicecontrol"
+  ],
+  "author": "Mert Safter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MSafter/voicecontrolled-smarthome/issues"
+  },
+  "homepage": "https://github.com/MSafter/voicecontrolled-smarthome#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "child_process": "^1.0.2",
+    "express": "^4.14.0",
+    "require-dir": "^0.3.1"
+  }
+}

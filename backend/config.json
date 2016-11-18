@@ -2,39 +2,11 @@
     "name": "Mert's smart home",
     "commands": [
         {
-            "phrase": "wake up ps4",
-            "command": {
-                "type": "native",
-                "exec": "sudo ps4-waker",
-                "onSuccess": " ",
-                "onError": " "
-            }
-        },
-        {
-            "phrase": "standby ps4",
-            "command": {
-                "type": "native",
-                "exec": "sudo ps4-waker standby",
-                "onSuccess": " ",
-                "onError": " "
-            }
-        },
-        {
-            "phrase": "louder",
+            "phrase": "hello",
             "command": {
                 "type": "node",
-                "modulename": "lg",
-                "functionname": "louder",
-                "onSuccess": " ",
-                "onError": " "
-            }
-        },
-        {
-            "phrase": "quieter",
-            "command": {
-                "type": "node",
-                "modulename": "lg",
-                "functionname": "quieter",
+                "modulename": "example",
+                "functionname": "sayHello",
                 "onSuccess": " ",
                 "onError": " "
             }

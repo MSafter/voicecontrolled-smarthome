@@ -17,13 +17,15 @@ exports.validateCommand = function (req, res) {
     if (commandInformation) {
         switch (commandInformation.command.type) {
             case "node":
-                var module = modules[commandInformation.modulename];
-                module[commandInformation.functionname](function (err) {
+                var module = modules[commandInformation.command.modulename];
+                module[commandInformation.command.functionname](function (err) {
                     if (err) {
                         return res.send({ message: "Error executing command " + commandInformation.phrase });
                     }
-                    return res.send({ message: "Command successfully executed" });
+
+                    res.send({ message: "Command successfully executed" });
                 });
+                break;
             case "native":
                 exec(commandInformation.command.exec, function (err, stdout, stderr) {
                     if (err) {
@@ -32,8 +34,10 @@ exports.validateCommand = function (req, res) {
 
                     return res.send({ stdout: stdout, stderr: stderr });
                 });
+                break;
         }
     } else {
+        console.log("No command configured for phrase");
         return res.send({ message: "No command configured for phrase" + userPhrase });
     }
 }
