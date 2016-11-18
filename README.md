@@ -17,17 +17,17 @@ Simple voice controlled smart home stack with python and nodeJS
 <pre>$ cd sphinxbase</pre>
 <pre>$ ./autogen.sh</pre>
 <pre>$ ./configure --enable-fixed</pre>
-<pre>$ make</pre>
-<pre>$ make check </pre> 
-<pre>$ make install</pre>
+<pre>$ sudo make</pre>
+<pre>$ sudo make check </pre> 
+<pre>$ sudo make install</pre>
 
 **Installation of Pocketsphinx**
-<pre>$ https://github.com/cmusphinx/pocketsphinx</pre>
+<pre>$ git clone https://github.com/cmusphinx/pocketsphinx</pre>
 <pre>$ cd pocketsphinx</pre>
 <pre>$ ./autogen.sh</pre>
 <pre>$ ./configure</pre>
 <pre>$ make clean all</pre>
-<pre>$ make check</pre>
+<pre>$ sudo make check</pre>
 <pre>$ sudo make install</pre>
 
 
@@ -35,7 +35,7 @@ Simple voice controlled smart home stack with python and nodeJS
 
 First of all install all needed dependencies for Python and node:
 * **Python dependencies**
-<pre>sudo pip install requirements.txt</pre>
+<pre>sudo pip install -r requirements.txt</pre>
 * **NodeJS dependencies**
 goto the backend folder and run:
 <pre>npm install</pre>
