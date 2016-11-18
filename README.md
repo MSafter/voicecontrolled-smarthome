@@ -10,7 +10,7 @@ Simple voice controlled smart home stack with python and nodeJS
 
 **Needed linux packages**
 
-<pre>sudo apt-get install python-dev python-pyaudio libasound2-dev libtool autoconf python libpulse-dev swig</pre>
+<pre>sudo apt-get install python-dev python-pyaudio libasound2-dev libtool autoconf python libpulse-dev swig bison</pre>
 
 **Installation of Sphinxbase**
 <pre>$ git clone https://github.com/cmusphinx/sphinxbase</pre>
