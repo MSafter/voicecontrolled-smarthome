@@ -7,6 +7,7 @@ Simple voice controlled smart home stack with python and nodeJS
 * **NodeJS**
 * **Sphinxbase**
 * **Pocketsphinx**
+* **Dictionary and Languagemodel for Sphinx**
 
 **Needed linux packages**
 
@@ -16,7 +17,7 @@ Simple voice controlled smart home stack with python and nodeJS
 <pre>$ git clone https://github.com/cmusphinx/sphinxbase</pre>
 <pre>$ cd sphinxbase</pre>
 <pre>$ ./autogen.sh</pre>
-<pre>$ ./configure --enable-fixed</pre>
+<pre>$ ./configure</pre>
 <pre>$ sudo make</pre>
 <pre>$ sudo make check </pre> 
 <pre>$ sudo make install</pre>
@@ -25,11 +26,15 @@ Simple voice controlled smart home stack with python and nodeJS
 <pre>$ git clone https://github.com/cmusphinx/pocketsphinx</pre>
 <pre>$ cd pocketsphinx</pre>
 <pre>$ ./autogen.sh</pre>
-<pre>$ ./configure</pre>
-<pre>$ make clean all</pre>
+<pre>$ ./configure --enable-fixed</pre>
 <pre>$ sudo make check</pre>
 <pre>$ sudo make install</pre>
 
+**Dictionary and Languagemodel for Sphinx**
+Sphinx needs at least a dictionary (.dic) and a language model (.lm) file to validate your audio imput.
+You can create those file <a href="http://www.speech.cs.cmu.edu/tools/lmtool-new.html">here</a>
+If you have created your dictionary and language model, specify the location of those files in the <pre>pihome.conf</pre> file. Otherwise you will get the following error message after runnning the python script <pre>pihome.py</pre>:
+* RuntimeError: new_Decoder returned -1
 
 # Installation
 
@@ -37,7 +42,7 @@ First of all install all needed dependencies for Python and node:
 * **Python dependencies**
 <pre>sudo pip install -r requirements.txt</pre>
 * **NodeJS dependencies**
-goto the backend folder and run:
+<pre>cd backend</pre>
 <pre>npm install</pre>
 
 # Test
