@@ -8,7 +8,7 @@ exports.validateCommand = function (req, res) {
     //get spoken phrase of user form body 
     var userPhrase = req.body.command.toLowerCase();
 
-    console.log("New command to validate: " + command);
+    console.log("New command to validate: " + userPhrase);
 
     //Get command information by phrase
     var commandInformation = getCommandInformation(userPhrase);
