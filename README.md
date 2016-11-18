@@ -31,9 +31,11 @@ Simple voice controlled smart home stack with python and nodeJS
 <pre>$ sudo make install</pre>
 
 **Dictionary and Languagemodel for Sphinx**
+
 Sphinx needs at least a dictionary (.dic) and a language model (.lm) file to validate your audio imput.
 You can create those file <a href="http://www.speech.cs.cmu.edu/tools/lmtool-new.html">here</a>
-If you have created your dictionary and language model, specify the location of those files in the <pre>pihome.conf</pre> file. Otherwise you will get the following error message after runnning the python script <pre>pihome.py</pre>:
+If you have created your dictionary and language model, specify the location of those files in the **pihome.conf** file.
+Otherwise you will get the following error message after runnning the python script **pihome.py**:
 * RuntimeError: new_Decoder returned -1
 
 # Installation
