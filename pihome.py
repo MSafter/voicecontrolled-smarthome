@@ -73,6 +73,7 @@ class CommandListener:
 						if not bestGuess.strip():
 							#restart utterance
 							self.decoder.start_utt()
+							sleep(0.5)
 						else:
 							#stop the stream
 							self.stream.stop_stream()
@@ -97,6 +98,3 @@ if __name__ == "__main__":
 		except Exception as ex:
 			print(ex)
 			pass
-
-		#sleep a sec				
-		sleep(1)
