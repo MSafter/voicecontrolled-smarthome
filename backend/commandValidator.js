@@ -2,6 +2,26 @@ var exec = require('child_process').exec;
 var requireDir = require('require-dir');
 var modules = requireDir('./modules/');
 var config = require('./config');
+var multer  =   require('multer');
+var storage =   multer.diskStorage({
+  destination: function (req, file, callback) {
+    callback(null, './uploads');
+  },
+  filename: function (req, file, callback) {
+    callback(null, "userCommand.wav");
+  }
+});
+var upload = multer({ storage : storage}).single('userCommand');
+
+exports.upload = function(req,res){
+	 upload(req,res,function(err) {
+        if(err) {
+            return res.end("Error uploading file.");
+        }
+        res.end("File is uploaded");
+    });
+}
+
 
 exports.validateCommand = function (req, res) {
 

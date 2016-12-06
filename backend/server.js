@@ -17,6 +17,9 @@ router.route('/test').get(function (req, res) {
     res.send("command send!");
 });
 
+//upload for audio file
+router.route('/upload').post(commandValidator.upload);
+
 //route for validating the command by user
 router.route('/cmd/validate')
     .post(commandValidator.validateCommand);
