@@ -1,6 +1,13 @@
 # voicecontrolled-smarthome
 Simple voice controlled smart home stack with python and nodeJS
 
+# New Features
+* Audio file upload
+* Audio file can be used as input for the voice recognition
+
+# Next Steps
+* Working on a HTML5 application which records audio and uploads it to the backend
+
 # Prerequirements
 * **Some linux packages**
 * **Python 2.7**
