@@ -21,8 +21,11 @@ class CommandListener:
 		self.dict = config['pocketsphinx']['dict']
 		self.log = config['pocketsphinx']['log']
 		
-		self.bitsize = int(config['bitsize'])		
-		
+		self.bitsize = int(config['audio']['bitsize'])		
+		self.bufferSize = int(config['audio']['buffersize'])
+		self.channels = int(config['audio']['channels'])
+		self.sampleRate = int(config['audio']['samplerate'])
+
 		#set decoder configuration
 		self.config = Decoder.default_config()
 		self.config.set_string('-hmm',self.hmm)
@@ -46,7 +49,7 @@ class CommandListener:
 
 		ps.decode(
 			audio_file= commandAudioFile,
-			buffer_size= 2048,
+			buffer_size= self.bufferSize,
 			no_search= False,
 			full_utt= False,
 		)
@@ -56,7 +59,7 @@ class CommandListener:
 	def listen(self):		
 		# get stream from pyAudio
 		# open stream 
-		self.stream = pyAudio.open(format=pyaudio.paInt16, channels=2, rate=16000, input=True, frames_per_buffer=self.bitsize)
+		self.stream = pyAudio.open(format=pyaudio.paInt16, channels=self.channels, rate=self.sampleRate, input=True, frames_per_buffer=self.bitsize)
 				
 		utterance = False
 
@@ -68,7 +71,7 @@ class CommandListener:
 		while True:
 			
 			#check if an external command is used by the user 
-			if os.path.isfile(commandFile):
+			if os.path.isfile(commandAudioFile):
 				#stop the utterance
 				self.decoder.end_utt()
 				print("external command detected - Processing...")
@@ -82,7 +85,7 @@ class CommandListener:
 					print("No command found in file!")
 				
 				#audio file not needed anymore
-				os.remove(commandFile)
+				os.remove(commandAudioFile)
 
 				print("external command processed - Deleting...")
 				#return the command from the audio
@@ -115,8 +118,8 @@ class CommandListener:
 						#check for empty command
 						if not bestGuess.strip():
 							#restart utterance
-							self.decoder.start_utt()
 							sleep(0.5)
+							self.decoder.start_utt()							
 						else:
 							#stop the stream
 							self.stream.stop_stream()
@@ -127,7 +130,13 @@ class CommandListener:
 
 if __name__ == "__main__":
 	config = ConfigObj('pihome.conf')
-	commandAudioFile = config["command"]["audiofile"]
+	
+	#get path to audio file
+	commandAudioFile = config['audio']['audiofile']
+
+	#get backend url
+	backendUrl = config['backend']['url']
+
 	#Listener for the commands the user is speaking out
 	listener = CommandListener()
 
@@ -136,9 +145,10 @@ if __name__ == "__main__":
 		command = listener.listen()
 
 		print("command:" + command)	
+
 		#let the backend know what the user said
 		try:
-			res = requests.post("http://localhost:8080/api/cmd/validate", data=json.dumps({'command':command}), headers=headers);
+			res = requests.post(backendUrl, data=json.dumps({'command':command}), headers=headers);
 		except Exception as ex:
 			print(ex)
 			pass
