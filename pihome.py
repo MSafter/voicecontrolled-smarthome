@@ -88,6 +88,8 @@ class CommandListener:
 				os.remove(commandAudioFile)
 
 				print("external command processed - Deleting...")
+				self.stream.stop_stream()
+				self.stream.close()
 				#return the command from the audio
 				return commandFromAudio
 		
