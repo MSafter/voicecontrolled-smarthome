@@ -2,14 +2,30 @@
     "name": "Mert's smart home",
     "commands": [
         {
-            "phrase": "hello",
-            "command": {
-                "type": "node",
-                "modulename": "example",
-                "functionname": "sayHello",
-                "onSuccess": " ",
-                "onError": " "
-            }
+            "keyphrase": "hello",
+            "commands": [
+                {
+                    "phrase": "native world",
+                    "command": {
+                        "type": "native",
+                        "exec": "echo hello world",
+                        "runAsync": true
+                    }
+                }
+            ]
+        },
+        {
+            "keyphrase": "hello",
+            "commands": [
+                {
+                    "phrase": "node world",
+                    "command": {
+                        "type": "node",
+                        "modulename": "example",
+                        "functionname": "sayHello"
+                    }
+                }
+            ]
         }
     ]
 }
