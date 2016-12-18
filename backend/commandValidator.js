@@ -31,7 +31,7 @@ exports.validateCommand = function (req, res) {
 
     //Get command information by phrase
     var commandInformation = getCommandInformation(userPhrase);
-    
+
     //check if command is configured
     if (commandInformation) {
         switch (commandInformation.command.type) {
@@ -75,16 +75,49 @@ exports.validateCommand = function (req, res) {
  * Note: Checks by phrase
  */
 function getCommandInformation(phrase) {
-    for (let i = 0; i < config.commands.length; i++) {
-        let current = config.commands[i];
-        let currentKeyphrase = current.keyphrase;
-        if (phrase.toLowerCase().indexOf(currentKeyphrase.toLowerCase()) === 0) {
-            for (let j = 0; j < current.commands.length; j++) {
-                let currentCommand = current.commands[j];
-                if (phrase.toLowerCase().endsWith(currentCommand.phrase.toLowerCase())) {
-                    return currentCommand;
-                }
-            }
+    //all words in the phrase
+    let words = [];
+    let commandInformation;
+
+    //get all keyPhrases given in the config
+    let keyPhrases = config.commands.map((item) => { return item.keyphrase.toLowerCase(); });
+
+    let keyWords = [];
+    //get the index of all keyphrases of the given phrase
+    phrase.split(' ').forEach(function (word, index) {
+        if (keyPhrases.indexOf(word) !== -1) {
+            keyWords.push({ word: word, index: index });
         }
-    }
+        words.push(word);
+    });
+
+    //get all words after the given keyphrases in the phrase
+    config.commands.forEach((item, index) => {
+        item.commands.forEach((command, comIndex) => {
+            let currentCommandPhrase = item.keyphrase + " " + command.phrase;
+            let currentCommandPhraseLength = currentCommandPhrase.split(' ').length;
+            let compareCommandPhrase = "";
+            keyWords.forEach((keyWord) => {
+                compareCommandPhrase = words[keyWord.index];
+                for (let i = 1; i < currentCommandPhraseLength; i++) {
+                    compareCommandPhrase += " " + words[keyWord.index + 1]
+                }
+                if (currentCommandPhrase.toLowerCase() === compareCommandPhrase.toLowerCase()) {
+                    commandInformation = command;
+                    console.log("done");
+                    return;
+                }
+            });
+            if (commandInformation) {
+                return;
+            }
+            console.log("still running...");
+        });
+        if (commandInformation) {
+            return;
+        }
+        console.log("still running...");
+    });
+
+    return commandInformation;
 }
