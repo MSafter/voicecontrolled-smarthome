@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  options = [{
+    title: "Option 1",
+    icon: "people"
+  },
+    {
+      title: "Option 2",
+      icon: "done"
+    }, {
+      title: "Option 3",
+      icon: "people"
+    },
+    {
+      title: "Option 4",
+      icon: "done"
+    }];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

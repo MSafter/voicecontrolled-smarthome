@@ -1,3 +1,5 @@
-<p>
-  dashboard works!
-</p>
+<div fxLayout="row" fxLayoutWrap style="padding:10px;">
+  <mat-card fxFlex="30" style="margin:15px;" *ngFor="let option of options" matRipple>
+    <mat-card-title><mat-icon>{{option.icon}}</mat-icon> {{option.title}}</mat-card-title>
+  </mat-card>
+</div>
