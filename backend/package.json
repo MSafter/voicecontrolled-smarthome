@@ -25,6 +25,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "child_process": "^1.0.2",
+    "cors": "^2.8.4",
     "express": "^4.14.0",
     "multer": "^1.2.0",
     "require-dir": "^0.3.1"

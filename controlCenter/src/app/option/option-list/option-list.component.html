@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayoutWrap style="padding:10px;">
+  <mat-card fxFlex="30" style="margin:15px;" *ngFor="let option of navOptions" matRipple (click)="downALevel(option)">
+    <mat-card-title fxLayoutAlign="center center">
+      <mat-icon>{{option.icon}}</mat-icon>
+      {{option.keyphrase}}
+      {{option.phrase}}
+      <span fxFlex></span>
+      <mat-icon *ngIf="option.options">list</mat-icon>
+      <mat-icon *ngIf="option.action">play_arrow</mat-icon>
+    </mat-card-title>
+  </mat-card>
+</div>

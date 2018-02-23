@@ -1,11 +1,14 @@
 {
     "name": "Mert's smart home",
+    "icon": "home",
     "commands": [
         {
             "keyphrase": "hello",
+            "icon": "people",
             "commands": [
                 {
                     "phrase": "native world",
+                    "icon": "people",
                     "command": {
                         "type": "native",
                         "exec": "echo hello world",
@@ -16,9 +19,11 @@
         },
         {
             "keyphrase": "hello",
+            "icon": "people",
             "commands": [
                 {
                     "phrase": "node world",
+                    "icon": "people",
                     "command": {
                         "type": "node",
                         "modulename": "example",

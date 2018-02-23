@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, EventEmitter} from '@angular/core';
+import {DataService} from "../shared/data.service";
 
 @Component({
   selector: 'app-dashboard',
@@ -7,26 +8,28 @@ import {Component, OnInit} from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  options = [{
-    title: "Option 1",
-    icon: "people"
-  },
-    {
-      title: "Option 2",
-      icon: "done"
-    }, {
-      title: "Option 3",
-      icon: "people"
-    },
-    {
-      title: "Option 4",
-      icon: "done"
-    }];
+  upLevel: EventEmitter<void> = new EventEmitter<void>();
+  navigation = {
+    isRootLevel: true
+  };
 
-  constructor() {
+  commands: any[];
+
+  constructor(private dataService: DataService) {
   }
 
-  ngOnInit() {
+  levelChanged(rootLevel: boolean) {
+    this.navigation.isRootLevel = rootLevel;
+  }
+
+  commandSelected(command){
+    this.dataService.execCommand(command);
+  }
+
+  async ngOnInit() {
+    this.dataService.systemInfo().subscribe(data => {
+      this.commands = data.commands;
+    });
   }
 
 }

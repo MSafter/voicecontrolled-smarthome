@@ -102,21 +102,20 @@ function getCommandInformation(phrase) {
                 for (let i = 1; i < currentCommandPhraseLength; i++) {
                     compareCommandPhrase += " " + words[keyWord.index + 1]
                 }
-                if (currentCommandPhrase.toLowerCase() === compareCommandPhrase.toLowerCase()) {
+                console.log(compareCommandPhrase, currentCommandPhrase);
+                if (currentCommandPhrase.trim().toLowerCase() === compareCommandPhrase.trim().toLowerCase()) {
+                    console.log(command);
                     commandInformation = command;
-                    console.log("done");
                     return;
                 }
             });
             if (commandInformation) {
                 return;
             }
-            console.log("still running...");
         });
         if (commandInformation) {
             return;
         }
-        console.log("still running...");
     });
 
     return commandInformation;

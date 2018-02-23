@@ -1,19 +1,29 @@
 //import required node modules
 var express = require('express');
 var bodyParser = require('body-parser');
+const cors = require('cors');
 
 //build server
 var app = express();
 var router = express.Router();
 
+
 //validator
 var commandValidator = require('./commandValidator');
 
-app.use(bodyParser.urlencoded({ extended: true }));
+
+// controller
+const systemController = require('./systemController');
+
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.use(cors());
 
 //--------Routes--------
-router.route('/test').get(function (req, res) {    
+
+router.get('/info', systemController.get);
+
+router.route('/test').get(function (req, res) {
     res.send("command send!");
 });
 
@@ -28,4 +38,4 @@ router.route('/cmd/validate')
 
 //configure and start server
 app.use('/api', router);
-app.listen(8080);
+app.listen(3000);
