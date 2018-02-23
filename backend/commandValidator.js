@@ -84,8 +84,10 @@ function getCommandInformation(phrase) {
 
     let keyWords = [];
     //get the index of all keyphrases of the given phrase
-    phrase.split(' ').forEach(function (word, index) {
-        if (keyPhrases.indexOf(word) !== -1) {
+    phrase.split(' ').forEach(function (word, index) {        
+        console.log( word,index)
+        if (keyPhrases.indexOf(word.toLowerCase()) !== -1) {
+            console.log("done", word,index)
             keyWords.push({ word: word, index: index });
         }
         words.push(word);
@@ -99,8 +101,11 @@ function getCommandInformation(phrase) {
             let compareCommandPhrase = "";
             keyWords.forEach((keyWord) => {
                 compareCommandPhrase = words[keyWord.index];
-                for (let i = 1; i < currentCommandPhraseLength; i++) {
-                    compareCommandPhrase += " " + words[keyWord.index + 1]
+                console.log(currentCommandPhraseLength, compareCommandPhrase, words);
+                let currentIndex = keyWord.index;
+                for (let i = 1; i < currentCommandPhraseLength; i++) {                    
+                    currentIndex++;
+                    compareCommandPhrase += " " + words[currentIndex]                    
                 }
                 console.log(compareCommandPhrase, currentCommandPhrase);
                 if (currentCommandPhrase.trim().toLowerCase() === compareCommandPhrase.trim().toLowerCase()) {

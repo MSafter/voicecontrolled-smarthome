@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86ba7136-0ad3-40a6-9ad0-aac9c4725b4c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/systemController.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/commandValidator.js" afterPath="$PROJECT_DIR$/backend/commandValidator.js" />
-      <change beforePath="$PROJECT_DIR$/backend/config.json" afterPath="$PROJECT_DIR$/backend/config.json" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" afterPath="$PROJECT_DIR$/backend/package.json" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" afterPath="$PROJECT_DIR$/backend/server.js" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/package.json" afterPath="$PROJECT_DIR$/controlCenter/package.json" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/src/app/app.component.html" afterPath="$PROJECT_DIR$/controlCenter/src/app/app.component.html" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/src/app/app.module.ts" afterPath="$PROJECT_DIR$/controlCenter/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html" afterPath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts" afterPath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts" />
-    </list>
+    <list default="true" id="86ba7136-0ad3-40a6-9ad0-aac9c4725b4c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -72,8 +59,8 @@
       <file leaf-file-name="commandValidator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/commandValidator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="91" column="7" lean-forward="false" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+            <state relative-caret-position="527">
+              <caret line="100" column="36" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -316,16 +303,15 @@
       <option name="presentableId" value="Default" />
       <updated>1519295863164</updated>
       <workItem from="1519295867113" duration="2291000" />
-      <workItem from="1519383697130" duration="2423000" />
+      <workItem from="1519383697130" duration="3062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7075000" />
+    <option name="totallyTimeSpent" value="7714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17913593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -515,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/commandValidator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="91" column="7" lean-forward="false" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        <state relative-caret-position="527">
+          <caret line="100" column="36" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="36" />
           <folding />
         </state>
       </provider>
