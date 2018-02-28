@@ -31,6 +31,31 @@
                     }
                 }
             ]
+        },
+        {
+            "keyphrase": "wake",
+            "icon": "world",
+            "commands":[
+                {
+                    "phrase":"ps4",
+                    "icon":"pc",
+                    "command":{
+                        "type":"node",
+                        "modulename":"smarthome",
+                        "functionname":"psWake"
+                    }
+                },
+                {
+                    "phrase":"pc",
+                    "icon":"pc",
+                    "command":{
+                        "type":"node",
+                        "modulename":"smarthome",
+                        "functionname":"wol",
+                        "parameter": true
+                    }
+                }
+            ]
         }
     ]
 }

@@ -28,6 +28,8 @@
     "cors": "^2.8.4",
     "express": "^4.14.0",
     "multer": "^1.2.0",
-    "require-dir": "^0.3.1"
+    "ps4-waker": "^1.4.3",
+    "require-dir": "^0.3.1",
+    "wol": "^1.0.3"
   }
 }
