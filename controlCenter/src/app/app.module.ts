@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
-import {MatToolbarModule, MatCardModule, MatIconModule, MatRippleModule, MatButtonModule} from '@angular/material';
+import {MatToolbarModule, MatCardModule, MatIconModule, MatRippleModule, MatButtonModule, MatListModule} from '@angular/material';
 import {AppRoutingModule} from "./app-routing.module";
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { OptionListComponent } from './option/option-list/option-list.component';
@@ -23,6 +23,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatButtonModule,
     FlexLayoutModule,
     MatRippleModule,
+    MatListModule,
     MatToolbarModule,
     MatCardModule
   ],

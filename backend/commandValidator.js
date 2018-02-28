@@ -43,7 +43,7 @@ exports.validateCommand = function(req, res) {
             });
           }
           res.send({ message: 'Command successfully executed', data: data });
-        });
+        }, req.body.params);
         break;
       case 'native':
         let callback = function(err, stdout, stderr) {

@@ -1,5 +1,11 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
+
+export interface ICommandSelected {
+  command: string;
+  params?: any;
+}
+
 @Component({
   selector: 'app-option-list',
   templateUrl: './option-list.component.html',
@@ -21,12 +27,15 @@ export class OptionListComponent implements OnInit {
     }
   }
 
-  @Output() commandSelected: EventEmitter<string> = new EventEmitter<string>();
+  @Output() commandSelected: EventEmitter<ICommandSelected> = new EventEmitter<ICommandSelected>();
 
   @Output() levelChanged: EventEmitter<any> = new EventEmitter<any>();
 
   @Input()
   set options(value: any[]) {
+    if (!value) {
+      return;
+    }
     this.rootOptions = value;
     this.navOptions = value;
     this.optionHierarchy.push(value);
@@ -46,8 +55,14 @@ export class OptionListComponent implements OnInit {
       this.levelChanged.emit(false);
       this.currentKeyPhrase = subOption.keyphrase;
     } else {
-      this.commandSelected.emit(`${this.currentKeyPhrase} ${subOption.phrase}`);
+      if (!subOption.command.parameters) {
+        this.commandSelected.emit({command: `${this.currentKeyPhrase} ${subOption.phrase}`});
+      }
     }
+  }
+
+  triggerCommand(option: any, params: any) {
+    this.commandSelected.emit({command: `${this.currentKeyPhrase} ${option.phrase}`, params});
   }
 
   upALevel() {

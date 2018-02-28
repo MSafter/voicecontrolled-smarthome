@@ -12,8 +12,8 @@ export class DataService {
     return this.http.get('http://localhost:3000/api/info').map(data => <{ commands: any[] }>data);
   }
 
-  execCommand(command: string) {
-    return this.http.post('http://localhost:3000/api/cmd/validate', {command}).subscribe();
+  execCommand(command: string, params?: any) {
+    return this.http.post('http://localhost:3000/api/cmd/validate', {command, params}).subscribe();
   }
 
 }

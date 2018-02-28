@@ -1,6 +1,6 @@
 <div fxLayout="row" fxLayoutWrap style="padding:10px;">
-  <mat-card fxFlex="30" style="margin:15px;" *ngFor="let option of navOptions" matRipple (click)="downALevel(option)">
-    <mat-card-title fxLayoutAlign="center center">
+  <mat-card fxFlex.gt-sm="30%" fxFlex="100%" style="margin:15px;" *ngFor="let option of navOptions" (click)="downALevel(option)">
+    <mat-card-title fxLayoutAlign="center center" fxLayoutGap="10px">
       <mat-icon>{{option.icon}}</mat-icon>
       {{option.keyphrase}}
       {{option.phrase}}
@@ -8,5 +8,11 @@
       <mat-icon *ngIf="option.options">list</mat-icon>
       <mat-icon *ngIf="option.action">play_arrow</mat-icon>
     </mat-card-title>
+    <mat-card-content *ngIf="option.command && option.command.parameters">
+      <mat-nav-list>
+        <h3 matSubheader>Parameter</h3>
+        <mat-list-item (click)="triggerCommand(option, param)" *ngFor="let param of option.command.parameters">{{param}}</mat-list-item>
+      </mat-nav-list>
+    </mat-card-content>
   </mat-card>
 </div>

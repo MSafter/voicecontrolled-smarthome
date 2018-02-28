@@ -1,5 +1,6 @@
 import {Component, OnInit, EventEmitter} from '@angular/core';
 import {DataService} from "../shared/data.service";
+import {ICommandSelected} from "../option/option-list/option-list.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -9,9 +10,7 @@ import {DataService} from "../shared/data.service";
 export class DashboardComponent implements OnInit {
 
   upLevel: EventEmitter<void> = new EventEmitter<void>();
-  navigation = {
-    isRootLevel: true
-  };
+  isRootLevel = true;
 
   commands: any[];
 
@@ -19,11 +18,12 @@ export class DashboardComponent implements OnInit {
   }
 
   levelChanged(rootLevel: boolean) {
-    this.navigation.isRootLevel = rootLevel;
+
+    this.isRootLevel = rootLevel;
   }
 
-  commandSelected(command){
-    this.dataService.execCommand(command);
+  commandSelected(event: ICommandSelected) {
+    this.dataService.execCommand(event.command, event.params);
   }
 
   async ngOnInit() {

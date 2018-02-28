@@ -1,61 +1,60 @@
 {
-    "name": "Mert's smart home",
-    "icon": "home",
-    "commands": [
+  "name": "Mert's smart home",
+  "icon": "home",
+  "commands": [
+    {
+      "keyphrase": "hello",
+      "icon": "people",
+      "commands": [
         {
-            "keyphrase": "hello",
-            "icon": "people",
-            "commands": [
-                {
-                    "phrase": "native world",
-                    "icon": "people",
-                    "command": {
-                        "type": "native",
-                        "exec": "echo hello world",
-                        "runAsync": true
-                    }
-                }
-            ]
+          "phrase": "native world",
+          "icon": "people",
+          "command": {
+            "type": "native",
+            "exec": "echo hello world",
+            "runAsync": true
+          }
         },
         {
-            "keyphrase": "hello",
-            "icon": "people",
-            "commands": [
-                {
-                    "phrase": "node world",
-                    "icon": "people",
-                    "command": {
-                        "type": "node",
-                        "modulename": "example",
-                        "functionname": "sayHello"
-                    }
-                }
+          "phrase": "node world",
+          "icon": "people",
+          "command": {
+            "type": "node",
+            "modulename": "example",
+            "functionname": "sayHello",
+            "parameters": [
+              "world world"
             ]
-        },
-        {
-            "keyphrase": "wake",
-            "icon": "world",
-            "commands":[
-                {
-                    "phrase":"ps4",
-                    "icon":"pc",
-                    "command":{
-                        "type":"node",
-                        "modulename":"smarthome",
-                        "functionname":"psWake"
-                    }
-                },
-                {
-                    "phrase":"pc",
-                    "icon":"pc",
-                    "command":{
-                        "type":"node",
-                        "modulename":"smarthome",
-                        "functionname":"wol",
-                        "parameter": true
-                    }
-                }
-            ]
+          }
         }
-    ]
+      ]
+    },
+    {
+      "keyphrase": "wake",
+      "icon": "devices",
+      "commands": [
+        {
+          "phrase": "ps4",
+          "icon": "games",
+          "command": {
+            "type": "node",
+            "modulename": "smarthome",
+            "functionname": "psWake"
+          }
+        },
+        {
+          "phrase": "pc",
+          "icon": "computer",
+          "command": {
+            "type": "node",
+            "modulename": "smarthome",
+            "functionname": "wol",
+            "parameters": [
+              "mac-address"
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }

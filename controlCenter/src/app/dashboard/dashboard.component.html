@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <button *ngIf="!navigation.isRootLevel" (click)="upLevel.next()" mat-icon-button><mat-icon>keyboard_arrow_left</mat-icon></button>
+  <button *ngIf="!isRootLevel" (click)="upLevel.next()" mat-icon-button><mat-icon>keyboard_arrow_left</mat-icon></button>
   <span>Control Center</span>
 </mat-toolbar>
 <app-option-list [options]="commands" (commandSelected)="commandSelected($event)" (levelChanged)="levelChanged($event)" [levelUp]="upLevel"></app-option-list>
