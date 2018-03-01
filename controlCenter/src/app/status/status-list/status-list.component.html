@@ -1,0 +1,10 @@
+<div fxLayout="row" fxLayoutWrap style="padding:10px;">
+  <mat-card *ngFor="let state of info" fxFlex.gt-sm="30%" fxFlex="100%" style="margin:15px;">
+    <mat-card-header>
+      <mat-card-title>{{state.key}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      {{state.value | json}}
+    </mat-card-content>
+  </mat-card>
+</div>

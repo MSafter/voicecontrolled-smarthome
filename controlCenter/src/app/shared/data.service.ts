@@ -8,8 +8,12 @@ export class DataService {
   constructor(public http: HttpClient) {
   }
 
-  systemInfo() {
+  apiInfo() {
     return this.http.get('http://localhost:3000/api/info').map(data => <{ commands: any[] }>data);
+  }
+
+  systemInfo(){
+    return this.http.get('http://localhost:3000/api/tv/info');
   }
 
   execCommand(command: string, params?: any) {

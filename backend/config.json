@@ -55,6 +55,25 @@
           }
         }
       ]
+    },
+    {
+      "keyphrase": "TV",
+      "icon": "tv",
+      "commands": [
+        {
+          "phrase": "Change input",
+          "icon": "input",
+          "command": {
+            "node": "smarthome",
+            "functionname": "tvChangeInput",
+            "parameters": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        }
+      ]
     }
   ]
 }

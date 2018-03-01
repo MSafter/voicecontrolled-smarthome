@@ -11,6 +11,8 @@ var router = express.Router();
 //validator
 var commandValidator = require('./commandValidator');
 
+// module
+const smarthome = require('./modules/smarthome');
 
 // controller
 const systemController = require('./systemController');
@@ -33,6 +35,8 @@ router.route('/upload').post(commandValidator.upload);
 //route for validating the command by user
 router.route('/cmd/validate')
     .post(commandValidator.validateCommand);
+
+router.route('/tv/info').get(smarthome.getTvInfo);
 
 //--------Routes--------
 

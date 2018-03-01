@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86ba7136-0ad3-40a6-9ad0-aac9c4725b4c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/commandValidator.js" afterPath="$PROJECT_DIR$/backend/commandValidator.js" />
       <change beforePath="$PROJECT_DIR$/backend/config.json" afterPath="$PROJECT_DIR$/backend/config.json" />
-      <change beforePath="$PROJECT_DIR$/backend/modules/example.js" afterPath="$PROJECT_DIR$/backend/modules/example.js" />
+      <change beforePath="$PROJECT_DIR$/backend/modules/smarthome.js" afterPath="$PROJECT_DIR$/backend/modules/smarthome.js" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" afterPath="$PROJECT_DIR$/backend/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" afterPath="$PROJECT_DIR$/backend/package.json" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" afterPath="$PROJECT_DIR$/backend/server.js" />
       <change beforePath="$PROJECT_DIR$/controlCenter/src/app/app.module.ts" afterPath="$PROJECT_DIR$/controlCenter/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html" afterPath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html" />
       <change beforePath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts" afterPath="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html" afterPath="$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.ts" afterPath="$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.ts" />
       <change beforePath="$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts" afterPath="$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts" />
-      <change beforePath="$PROJECT_DIR$/controlCenter/src/styles.css" afterPath="$PROJECT_DIR$/controlCenter/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,61 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts">
+      <file leaf-file-name="dashboard.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commandValidator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/commandValidator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/modules/example.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="option-list.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="16" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,28 +39,8 @@
       <file leaf-file-name="smarthome.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/modules/smarthome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="option-list.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="629">
+              <caret line="37" column="15" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -121,6 +51,83 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status-list.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status-list.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status-list.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#mat-card#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="option-list.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -152,18 +159,20 @@
         <option value="$PROJECT_DIR$/controlCenter/src/index.html" />
         <option value="$PROJECT_DIR$/controlCenter/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/backend/systemController.js" />
-        <option value="$PROJECT_DIR$/backend/server.js" />
-        <option value="$PROJECT_DIR$/backend/modules/smarthome.js" />
-        <option value="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html" />
         <option value="$PROJECT_DIR$/controlCenter/src/styles.css" />
-        <option value="$PROJECT_DIR$/controlCenter/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.ts" />
-        <option value="$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts" />
-        <option value="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts" />
         <option value="$PROJECT_DIR$/backend/commandValidator.js" />
-        <option value="$PROJECT_DIR$/backend/config.json" />
         <option value="$PROJECT_DIR$/backend/modules/example.js" />
         <option value="$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html" />
+        <option value="$PROJECT_DIR$/controlCenter/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/backend/config.json" />
+        <option value="$PROJECT_DIR$/backend/modules/smarthome.js" />
+        <option value="$PROJECT_DIR$/backend/server.js" />
+        <option value="$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts" />
+        <option value="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts" />
+        <option value="$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.ts" />
+        <option value="$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.html" />
       </list>
     </option>
   </component>
@@ -187,6 +196,20 @@
     <option name="y" value="85" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -274,6 +297,23 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="voicecontrolled-smarthome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voicecontrolled-smarthome" type="462c0819:PsiDirectoryNode" />
+              <item name="controlCenter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="status" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voicecontrolled-smarthome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voicecontrolled-smarthome" type="462c0819:PsiDirectoryNode" />
+              <item name="controlCenter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="status" type="462c0819:PsiDirectoryNode" />
+              <item name="status-list" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -281,12 +321,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="C:\Workspace\misc\voicecontrolled-smarthome\controlCenter\node_modules\tslint" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -316,23 +360,23 @@
       <workItem from="1519295867113" duration="2291000" />
       <workItem from="1519383697130" duration="3062000" />
       <workItem from="1519728315691" duration="989000" />
-      <workItem from="1519817401999" duration="4526000" />
+      <workItem from="1519817401999" duration="4595000" />
+      <workItem from="1519897970994" duration="2178000" />
+      <workItem from="1519910753938" duration="2320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13229000" />
+    <option name="totallyTimeSpent" value="17796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17913593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -344,6 +388,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -358,6 +404,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/systemController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -410,10 +488,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#mat-card#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -439,7 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -479,10 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#mat-card#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -492,6 +563,8 @@
           <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <marker date="1519912603348" expanded="true" signature="880:1208" ph="{...}" />
+            <marker date="1519912603348" expanded="true" signature="1233:1236" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -574,19 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,59 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/systemController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/commandValidator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,41 +680,227 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/modules/smarthome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
+        <state relative-caret-position="1071">
           <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html">
+    <entry file="file://$PROJECT_DIR$/controlCenter/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Workspace/misc/voicecontrolled-smarthome/controlCenter">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/controlCenter</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/app-routing.module.ts#AppRoutingModule#251;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app-routing.module.ts#DashboardComponent#102;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app-routing.module.ts#NgModule#8;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app-routing.module.ts#RouterModule#48;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app-routing.module.ts#Routes#62;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/app.component.spec.ts#AppComponent#65;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.component.spec.ts#TestBed#9;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.component.spec.ts#async#18;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/app.component.ts#AppComponent#44;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.component.ts#Component#9;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/e2e/app.e2e-spec.ts#AppPage#9;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/app.module.ts#AppComponent#126;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#AppModule#662;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#AppRoutingModule#371;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#BrowserAnimationsModule#48;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#DashboardComponent#172;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#DataService#563;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#FlexLayoutModule#426;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#HttpClientModule#614;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#MatButtonModule#305;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#MatCardModule#258;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#MatIconModule#273;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#MatListModule#322;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#MatRippleModule#288;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#MatToolbarModule#240;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#NgModule#8;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/app.module.ts#OptionListComponent#482;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/e2e/app.po.ts#AppPage#52;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/e2e/app.po.ts#browser#9;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/e2e/app.po.ts#by#18;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/e2e/app.po.ts#element#22;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/core/src/application_ref.d.ts#enableProdMode#708;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/core/testing/src/async.d.ts#async#0;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/material/button/typings/button-module.d.ts#MatButtonModule#0;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/material/card/typings/card-module.d.ts#MatCardModule#0;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/common/http/src/client.d.ts#HttpClient#347;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/core/testing/src/component_fixture.d.ts#ComponentFixture#302;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/router/src/config.d.ts#Routes#7840;</node>
+            <node x="" y="">Component;Injectable;Input;NgModule;Output;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.spec.ts#ComponentFixture#16;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.spec.ts#DashboardComponent#84;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.spec.ts#TestBed#34;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts#Component#8;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.ts#DashboardComponent#194;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.ts#DataService#71;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.ts#EventEmitter#27;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.ts#ICommandSelected#123;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/dashboard/dashboard.component.ts#OnInit#19;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/shared/data.service.spec.ts#DataService#67;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/shared/data.service.spec.ts#TestBed#9;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/shared/data.service.spec.ts#inject#18;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts#DataService#124;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/shared/data.service.ts#HttpClient#50;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/shared/data.service.ts#Injectable#8;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/shared/data.service.ts#map.d.ts#91;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/environments/environment.ts#environment#348;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/core/src/event_emitter.d.ts#EventEmitter#243;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/favicon.ico</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/material/icon/typings/icon-module.d.ts#MatIconModule#0;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/material/core/typings/ripple/index.d.ts#MatRippleModule#91;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/ts-node/dist/index.d.ts#register#2016;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/protractor/built/index.d.ts#browser#1200;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/node_modules/protractor/built/index.d.ts#by#1447;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/node_modules/protractor/built/index.d.ts#element#1367;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/index.html</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/karma-chrome-launcher/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/karma-jasmine/lib/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/karma-jasmine-html-reporter/src/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/karma.conf.js#index.js#265;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/karma.conf.js#karma.d.ts#434;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/karma.conf.js#reporter.js#383;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/cli/plugins/karma.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts#OnInit#1111;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/material/list/typings/list-module.d.ts#MatListModule#0;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/jasmine-spec-reporter/built/main.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/main.ts#AppModule#134;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/main.ts#enableProdMode#9;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/main.ts#environment#180;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/main.ts#hammerjs#229;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/main.ts#platformBrowserDynamic#57;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/rxjs/add/operator/map.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/common/http/src/module.d.ts#HttpClientModule#2583;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/platform-browser/animations/src/module.d.ts#BrowserAnimationsModule#0;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/flex-layout/typings/module.d.ts#FlexLayoutModule#214;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.spec.ts#ComponentFixture#16;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.spec.ts#OptionListComponent#84;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.spec.ts#TestBed#34;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.spec.ts#async#9;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.ts#Component#8;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.ts#EventEmitter#42;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.ts#ICommandSelected#80;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.ts#Input#27;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.ts#OnInit#19;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.ts#OptionListComponent#154;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/app/option/option-list/option-list.component.ts#Output#34;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/platform-browser-dynamic/src/platform-browser-dynamic.d.ts#platformBrowserDynamic#322;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/polyfills.ts#reflect.js#1766;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/polyfills.ts#zone.js/dist/zone#2924;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/protractor.conf.js#main.d.ts#157;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/protractor.conf.js#register#547;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/core-js/es7/reflect.js</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/karma-coverage-istanbul-reporter/src/reporter.js</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/router/src/router_module.d.ts#RouterModule#1199;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/src/test.ts#BrowserDynamicTestingModule#198;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/test.ts#getTestBed#144;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/test.ts#platformBrowserDynamicTesting#229;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/src/test.ts#zone.js/dist/zone-testing#99;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/core/testing/src/test_bed.d.ts#TestBed#1089;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/node_modules/@angular/core/testing/src/test_bed.d.ts#getTestBed#7830;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/node_modules/@angular/core/testing/src/test_bed.d.ts#inject#7902;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/platform-browser-dynamic/testing/src/testing.d.ts#BrowserDynamicTestingModule#441;C:/Workspace/misc/voicecontrolled-smarthome/controlCenter/node_modules/@angular/platform-browser-dynamic/testing/src/testing.d.ts#platformBrowserDynamicTesting#346;</node>
+            <node x="" y="">$PROJECT_DIR$/controlCenter/node_modules/@angular/material/toolbar/typings/toolbar-module.d.ts#MatToolbarModule#0;</node>
+            <node x="" y="">hammerjs</node>
+            <node x="" y="">https://fonts.googleapis.com/icon?family=Material+Icons</node>
+            <node x="" y="">zone.js/dist/zone</node>
+            <node x="" y="">zone.js/dist/zone-testing</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.4457347029924073" x="1155.0" y="1110.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1519912603348" expanded="true" signature="880:1208" ph="{...}" />
+            <marker date="1519912603348" expanded="true" signature="1233:1236" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/commandValidator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="27" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        <state relative-caret-position="968">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/modules/smarthome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="15" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/systemController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/shared/data.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/option/option-list/option-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlCenter/src/app/status/status-list/status-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#mat-card#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

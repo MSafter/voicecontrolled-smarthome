@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
 
   upLevel: EventEmitter<void> = new EventEmitter<void>();
   isRootLevel = true;
-
+  status: any;
   commands: any[];
 
   constructor(private dataService: DataService) {
@@ -27,9 +27,13 @@ export class DashboardComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.dataService.systemInfo().subscribe(data => {
+    this.dataService.apiInfo().subscribe(data => {
       this.commands = data.commands;
     });
+
+    this.dataService.systemInfo().subscribe(data =>{
+      this.status = data;
+    })
   }
 
 }
