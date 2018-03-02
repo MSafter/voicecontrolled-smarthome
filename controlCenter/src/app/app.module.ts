@@ -9,7 +9,10 @@ import {
   MatIconModule,
   MatRippleModule,
   MatButtonModule,
-  MatListModule
+  MatInputModule,
+  MatListModule,
+  MatFormFieldModule,
+  MatProgressSpinnerModule,
 } from '@angular/material';
 import {AppRoutingModule} from "./app-routing.module";
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -34,6 +37,9 @@ import { StatusListComponent } from './status/status-list/status-list.component'
     FlexLayoutModule,
     MatRippleModule,
     MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
     MatListModule,
     MatToolbarModule,
     MatCardModule

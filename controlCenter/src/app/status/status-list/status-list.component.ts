@@ -1,5 +1,23 @@
 import {Component, OnInit, Input} from '@angular/core';
 
+export interface IStatusInfo {
+  title: string;
+  fields: IStatusInfoField[];
+}
+
+export interface IStatusInfoField {
+  type: string;
+  value: any;
+  positiveResult?: any;
+  negativeResult?: any;
+}
+
+export interface IStatus {
+  title: string;
+  icon: string;
+  info: IStatusInfo
+}
+
 @Component({
   selector: 'app-status-list',
   templateUrl: './status-list.component.html',
@@ -7,16 +25,14 @@ import {Component, OnInit, Input} from '@angular/core';
 })
 export class StatusListComponent implements OnInit {
 
-  info: any[] = [];
+  _status: IStatus[];
 
   @Input()
-  set status(value: any) {
+  set status(value: IStatus[]) {
     if (!value) {
       return;
     }
-    Object.keys(value).forEach(item => {
-      this.info.push({key: item, value: value[item]});
-    });
+    this._status = value;
   }
 
   constructor() {

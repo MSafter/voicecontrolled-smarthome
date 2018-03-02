@@ -1,6 +1,8 @@
 <mat-toolbar color="primary">
   <button *ngIf="!isRootLevel" (click)="upLevel.next()" mat-icon-button><mat-icon>keyboard_arrow_left</mat-icon></button>
   <span>Control Center</span>
+  <span fxFlex></span>
+  <button mat-icon-button (click)="loadData()"><mat-icon>refresh</mat-icon></button>
 </mat-toolbar>
 <mat-tab-group mat-stretch-tabs backgroundColor="primary">
   <mat-tab label="Commands">

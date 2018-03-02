@@ -23,7 +23,10 @@
             "modulename": "example",
             "functionname": "sayHello",
             "parameters": [
-              "world world"
+              {
+                "type": "plain",
+                "value": "world"
+              }
             ]
           }
         }
@@ -50,7 +53,10 @@
             "modulename": "smarthome",
             "functionname": "wol",
             "parameters": [
-              "mac-address"
+              {
+                "type": "url",
+                "value": "http://localhost:3000/api/device/info"
+              }
             ]
           }
         }
@@ -67,9 +73,14 @@
             "node": "smarthome",
             "functionname": "tvChangeInput",
             "parameters": [
-              "a",
-              "b",
-              "c"
+              {
+                "type": "plain",
+                "value": "a"
+              },
+              {
+                "type": "plain",
+                "value": "b"
+              }
             ]
           }
         }

@@ -1,4 +1,6 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import 'rxjs/add/operator/first'
 
 
 export interface ICommandSelected {
@@ -36,12 +38,38 @@ export class OptionListComponent implements OnInit {
     if (!value) {
       return;
     }
+
+
+    console.log(this.prepareValue(value));
     this.rootOptions = value;
     this.navOptions = value;
     this.optionHierarchy.push(value);
   }
 
-  constructor() {
+
+  async prepareValue(value: any){
+    for (let i = 0; i < value.length; i++) {
+      let currRootCommand = value[i];
+      for (let j = 0; j < currRootCommand.commands.length; j++) {
+        let currCommand = currRootCommand.commands[j];
+        if (currCommand.command.parameters) {
+          const newParams = [];
+          for (let k = 0; k < currCommand.command.parameters.length; k++) {
+            let parameter = currCommand.command.parameters[k];
+            if (parameter.type === 'url') {
+              newParams.push(await this.http.get(parameter.value).first().toPromise());
+            } else if (parameter.type === 'plain') {
+              newParams.push(parameter.value);
+            }
+          }
+          currCommand.command.parameters = newParams;
+          console.log(currCommand.command.parameters);
+        }
+      }
+    }
+}
+
+  constructor(private http: HttpClient) {
 
   }
 
@@ -61,8 +89,19 @@ export class OptionListComponent implements OnInit {
     }
   }
 
-  triggerCommand(option: any, params: any) {
-    this.commandSelected.emit({command: `${this.currentKeyPhrase} ${option.phrase}`, params});
+  validateParam(param: any) {
+    if (param.type === 'url') {
+      console.log(param.value);
+      this.http.get(param.value).subscribe(data => {
+        param.show = data;
+      });
+    } else if (param.type === 'plain') {
+      param.show = param.value;
+    }
+  }
+
+  triggerCommand(option: any, param: any) {
+    this.commandSelected.emit({command: `${this.currentKeyPhrase} ${option.phrase}`, params: param.value});
   }
 
   upALevel() {

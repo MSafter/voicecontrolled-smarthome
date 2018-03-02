@@ -36,6 +36,8 @@ router.route('/upload').post(commandValidator.upload);
 router.route('/cmd/validate')
     .post(commandValidator.validateCommand);
 
+router.route('/device/info').get(systemController.getDeviceMacs);
+
 router.route('/tv/info').get(smarthome.getTvInfo);
 
 //--------Routes--------

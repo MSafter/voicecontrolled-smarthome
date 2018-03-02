@@ -27,13 +27,18 @@ export class DashboardComponent implements OnInit {
   }
 
   async ngOnInit() {
+    this.loadData();
+  }
+
+  loadData(){
     this.dataService.apiInfo().subscribe(data => {
+      console.log(data);
       this.commands = data.commands;
     });
 
     this.dataService.systemInfo().subscribe(data =>{
       this.status = data;
-    })
+    });
   }
 
 }
